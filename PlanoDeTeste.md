@@ -1,1 +1,2 @@
-# Plano de testes da situação de aprendizagem 4º Semestre Rodrigo Ferreira
+# Plano de testes da situação de aprendizagem 4º Semestre
+Rodrigo Ferreira
