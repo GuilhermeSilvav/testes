@@ -22,6 +22,24 @@ CT03: Cadastrar um EPI com dados inválidos (ex: nome com caracteres especiais).
 Passos: Preencher os campos com dados inválidos e clicar em "Salvar".
 Resultado Esperado: Mensagem de erro informando que os dados são inválidos.
 
+## 4. Teste de Devolução de EPIs (RODRIGO)
+   Objetivo: Verificar se o sistema permite a devolução correta de EPIs.
+
+Casos de Teste:
+
+CT01: Devolver um EPI que foi emprestado.
+
+Passos: Acessar a tela de devolução, selecionar um EPI emprestado e clicar em "Devolver".
+Resultado Esperado: Devolução registrada com sucesso e EPI disponível novamente para empréstimo.
+CT02: Tentar devolver um EPI que não foi emprestado.
+
+Passos: Tentar devolver um EPI que não está no histórico de empréstimos.
+Resultado Esperado: Mensagem de erro informando que o EPI não está emprestado.
+CT03: Devolver um EPI sem preencher campos obrigatórios.
+
+Passos: Tentar devolver sem selecionar o EPI.
+Resultado Esperado: Mensagem de erro informando que um EPI deve ser selecionado.
+
 
 ## 5. Teste de Relatórios de Empréstimos
 Objetivo: Garantir que o sistema gere relatórios precisos sobre os empréstimos de EPIs.
@@ -40,3 +58,4 @@ CT03: Tentar gerar relatório sem critérios de filtro.
 
 Passos: Solicitar relatório sem escolher filtros.
 Resultado Esperado: Mensagem de erro informando que filtros devem ser selecionados.
+
