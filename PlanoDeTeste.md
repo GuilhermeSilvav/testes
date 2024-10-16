@@ -3,6 +3,7 @@ Rodrigo Ferreira
 Guilherme Velho
 Jonatas Gabreil Santos Campos
 Fillipe Lima
+Willian Matheus
 
 ## 1. Teste de Cadastro de Equipamentos
 Objetivo: Garantir que o sistema permita o cadastro correto de diferentes tipos de EPIs.
@@ -40,6 +41,23 @@ CT03: Cadastrar um colaborador com CPF inválido.
 Passos: Preencher o CPF com dados inválidos e clicar em "Salvar".
 Resultado Esperado: Mensagem de erro informando que o CPF é inválido.
 
+## 3. Teste de Empréstimo de EPIs
+   Objetivo: Garantir que o processo de empréstimo de EPIs funcione corretamente.
+
+Casos de Teste:
+
+CT01: Realizar um empréstimo de EPI válido.
+
+Passos: Acessar a tela de empréstimo, selecionar um colaborador e um EPI e clicar em "Emprestar".
+Resultado Esperado: Empréstimo registrado com sucesso e atualizado no histórico de empréstimos.
+CT02: Tentar emprestar um EPI que já está emprestado.
+
+Passos: Selecionar um EPI que já está emprestado e tentar realizar o empréstimo.
+Resultado Esperado: Mensagem de erro informando que o EPI já está emprestado.
+CT03: Tentar emprestar um EPI sem selecionar um colaborador.
+
+Passos: Deixar o campo colaborador em branco e tentar emprestar.
+Resultado Esperado: Mensagem de erro informando que um colaborador deve ser selecionado.
 
 ## 4. Teste de Devolução de EPIs
    Objetivo: Verificar se o sistema permite a devolução correta de EPIs.
